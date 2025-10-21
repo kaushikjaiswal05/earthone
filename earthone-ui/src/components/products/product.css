@@ -1,0 +1,141 @@
+.product-section {
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: #ccc;
+    font-size: 1.2em;
+    padding-top: 2em;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 800;
+  }
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  flex-direction: column;
+
+  img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 1.5em;
+    border-radius: 5px;
+    border: 0.5px solid #ccc;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+}
+
+.products > .product > h2 {
+  color: #fff;
+  font-weight: 600;
+  margin-top: 0.5em;
+}
+
+.products > .product > h3 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.box {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: center;
+  margin-top: 1em;
+  border-top: 1px solid #948d6a;
+  border-bottom: 1px solid #948d6a;
+
+  p {
+    color: #948d6a;
+    font-size: 0.9em;
+    padding: 0;
+    max-width: 80%;
+  }
+}
+
+.btn-1 {
+  background: transparent;
+  border: 1px solid #948d6a;
+  color: #948d6a;
+  padding: 2.5px 5px;
+  align-self: center;
+  width: 100px;
+  border-radius: 5px;
+
+  &:hover {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.buy-btn {
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  background-color: #8ba78d;
+  border-radius: 10px;
+  padding: 10px 35px;
+  font-weight: 600;
+  border: none;
+
+  &:hover {
+    background-color: #779d77;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .product-section p {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+
+  .product-section h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .product-section {
+    padding: 1em;
+  }
+
+  .products {
+    padding-top: 1em;
+
+    img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .box {
+        width: 250px;
+        height: 150px; 
+    }
+  }
+
+  .product-section p {
+    font-size: 0.8em;
+  }
+
+  .product-section h1 {
+    font-size: 1.8em;
+  }
+}

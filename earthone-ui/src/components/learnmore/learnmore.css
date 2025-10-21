@@ -1,0 +1,104 @@
+.learnmore {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    bottom: 5rem;
+  }
+  
+  .learn-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  
+  .learn-content {
+      position: absolute;
+      z-index: 1;
+      top: 15%;
+      left: 7%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+      margin-bottom: 2rem !important;
+      
+      .learn-text {
+          font-size: 5em;
+          color: #fff;
+          max-width: 40%;
+          text-align: left;
+      }
+  }
+  
+  .learn-btn {
+    margin-top: 1em;
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #fff;
+    
+  
+    &:hover {
+      border: 2px solid #ccc;
+      color: #ccc;
+    }
+  }
+  
+  .learn-gradient {
+    width: 100% !important;
+    height: 100px !important;
+    background: linear-gradient(to top, #00000000, #24242475, #242424, #242424) !important;
+    position: absolute !important;
+    top: 0 !important;
+    z-index: 1 !important;
+  }
+
+  .learn-gradient-bottom {
+    width: 100% !important;
+    height: 60px !important;
+    background: linear-gradient(to bottom, #ffffff00, #dbebef, #d3ebef) !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    z-index: 1 !important;
+  }
+
+  .learn-para {
+    color: #fff;
+    font-size: 1.1em;
+    text-align: left;
+    padding: 1.5em 0.5em 0 0;
+  }
+  
+  
+  @media screen and (max-width: 800px){
+   .learn-content>.learn-text {
+    font-size: 3.5rem;
+   }
+   .learn-btn {
+    margin-bottom: 1.5em;
+   }
+   .learn-content {
+    top: 25%;
+   }
+  }
+  
+  @media screen and (max-width: 430px){
+    .learn-content>.learn-text {
+     font-size: 2.5rem;
+     max-width: 100%;
+     align-items: center;
+     justify-content: center;
+    }
+   }
+  
+  
