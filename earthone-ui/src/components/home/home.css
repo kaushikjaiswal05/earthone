@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 430px){
   .gradient {
-    top: 30px;
+    bottom: -30px;
     height: 90px;
   }
   .content {
